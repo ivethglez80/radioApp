@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "radioApp",
-    "slug": "radioApp",
+    "name": "RadioFarodeGracia",
+    "slug": "RadioFarodeGracia",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,10 +11,26 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.farodegracia.radio",
+      "buildNumber": "1.0.0",
+      "icon": "./assets/apple-touch-icon.png",
+      "infoPlist": {
+        "CFBundleIconFiles": [
+          "./assets/apple-touch-icon.png"
+        ],
+        "CFBundleIconName": "./assets/apple-touch-icon.png"
+      }
     },
     "android": {
+      "enableHermes": true,
       "package": "com.farodegracia.radioapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -22,7 +38,13 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon-32x32.png",
+      "meta": {
+        "appleTouchIcon": "./assets/apple-touch-icon.png",
+        "themeColor": "#ffffff",
+        "msapplicationTileColor": "#ffffff",
+        "manifest": "./assets/site.webmanifest"
+      }
     },
     "extra": {
       "eas": {
@@ -31,3 +53,4 @@
     }
   }
 }
+
